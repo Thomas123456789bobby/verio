@@ -36,7 +36,7 @@ if ($mysqli -> connect_errno) {
     echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
     exit();
 }
- if ($mysqli->query("INSERT INTO leer VALUES ('$getal_4')") === TRUE) {
+ if ($mysqli->query("INSERT INTO leer VALUES ('$getal_4', '$je_naam')") === TRUE) {
     echo "geluckt";
   } else {
     echo "Error: " . $mysqli->error;
