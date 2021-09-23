@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/echo.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+  <div class="ans">
 <?php
 
 $je_naam = $_POST['je_naam'];
@@ -25,11 +37,19 @@ if ($mysqli -> connect_errno) {
     exit();
 }
  if ($mysqli->query("INSERT INTO leer VALUES ('$getal_4')") === TRUE) {
-    echo "New record created successfully";
+    echo "geluckt";
   } else {
     echo "Error: " . $mysqli->error;
   }
 $mysqli -> close();
-
+echo "<br>";
+echo '<a href="http://localhost/phpmyadmin/index.php?route=/sql&server=1&db=anus&table=leer&pos=0" target="_blank">surfer info</a>';
 
 ?>
+</div>
+<div id="gif2">
+<img  src="../media/200.gif" alt="Computer Man">
+</div>
+</div>
+</body>
+</html>
