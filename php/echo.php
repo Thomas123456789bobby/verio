@@ -19,6 +19,12 @@ $getal_3 = $_POST['getal_3'];
 
 $getal_4 = $getal_1 + $getal_2 + $getal_3 ;
 
+if(empty($je_naam))
+{
+   echo "You did not fill out the required fields.";
+}
+
+
 echo "hello $je_naam !";
 echo "<br>" ;
 echo "<br>" ;
@@ -28,7 +34,20 @@ echo"<br><br>" ;
  if ($getal_4 <= 100){ echo "lager dan 100";}
  echo "<br><br>" ;
  
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  $mysqli = new mysqli("localhost","root","","anus");
 
 
